@@ -1,14 +1,14 @@
-import { PrismaClient } from "@prisma/client"
-import { GraphQLList, GraphQLObjectType } from "graphql"
-import { MemberType, MemberTypeId } from "../types/member-type.js"
-import { memberTypeResolver, memberTypesResolver } from "./resolvers/member-type.resolver.js"
-import { PostType } from "../types/post.js"
-import { postResolver, postsResolver } from "./resolvers/post.resolver.js"
-import { UserType } from "../types/user.js"
-import { userResolver, usersResolver } from "./resolvers/user.resolver.js"
-import { ProfileType } from "../types/profile.js"
-import { profileResolver, profilesResolver } from "./resolvers/profile.resolver.js"
-import { UUIDType } from "../types/uuid.js"
+import { PrismaClient } from "@prisma/client";
+import { GraphQLList, GraphQLObjectType } from "graphql";
+import { MemberType, MemberTypeId } from "../types/member-type.js";
+import { memberTypeResolver, memberTypesResolver } from "./resolvers/member-type.resolver.js";
+import { PostType } from "../types/post.js";
+import { postResolver, postsResolver } from "./resolvers/post.resolver.js";
+import { UserType } from "../types/user.js";
+import { userResolver, usersResolver } from "./resolvers/user.resolver.js";
+import { ProfileType } from "../types/profile.js";
+import { profileResolver, profilesResolver } from "./resolvers/profile.resolver.js";
+import { UUIDType } from "../types/uuid.js";
 
 export const Queries = (prisma: PrismaClient) => {
     return new GraphQLObjectType({
